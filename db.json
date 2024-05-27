@@ -1,0 +1,247 @@
+{
+  "users": [
+    {
+      "name": "demo",
+      "email": "demo@demo",
+      "password": "demo",
+      "id": "1"
+    },
+    {
+      "id": "45fj1kinglwm5zu10"
+    },
+    {
+      "name": "Александр C",
+      "email": "alex@mail.ru",
+      "password": "12345",
+      "id": "45fj1kl8wlwm6dtxm"
+    },
+    {
+      "name": "Артем",
+      "email": "test@test.ru",
+      "password": "12345",
+      "id": "45fj1k6jolwm75o93"
+    },
+    {
+      "name": "asd",
+      "email": "asdf@asd.ru",
+      "password": "asd",
+      "id": "45fj1khrwlwm77net"
+    },
+    {
+      "name": "Александр Невский",
+      "email": "alex2@mail.ru",
+      "password": "alex",
+      "id": "45fj1k65wlwp37fo9"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Банк",
+      "user_id": "1",
+      "id": "1"
+    },
+    {
+      "name": "Магазин",
+      "user_id": "1",
+      "id": "2"
+    },
+    {
+      "name": "Бизнес",
+      "user_id": "1",
+      "id": "3"
+    },
+    {
+      "name": "Сбербанк",
+      "user_id": "45fj1khrwlwm77net",
+      "id": "45fj1kkh0lwmbeqin"
+    },
+    {
+      "name": "Альфабанк",
+      "user_id": "45fj1khrwlwm77net",
+      "id": "45fj1kj6klwmbfrfw"
+    },
+    {
+      "name": "Сбербанк",
+      "user_id": "45fj1k6jolwm75o93",
+      "id": "45fj1kasclwp2nkyo"
+    },
+    {
+      "name": "Альфабанк",
+      "user_id": "45fj1k65wlwp37fo9",
+      "id": "45fj1kgeglwp38kf1"
+    }
+  ],
+  "transactions": [
+    {
+      "account_id": "1",
+      "created_at": "2019-09-15 10:24:02",
+      "id": "1",
+      "name": "Кредит",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-17 15:53:02",
+      "id": "2",
+      "name": "Баланс на дебетовке",
+      "sum": 3200,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-19 20:12:02",
+      "id": "3",
+      "name": "Копилка",
+      "sum": 1500,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 16:23:02",
+      "id": "4",
+      "name": "Молочные продукты",
+      "sum": 100,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "5",
+      "name": "Фрукты",
+      "sum": 250,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "17",
+      "name": "Овощи",
+      "sum": 300,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 14:47:02",
+      "id": "6",
+      "name": "Мясо",
+      "sum": 600,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-27 13:27:02",
+      "id": "7",
+      "name": "Долг в банк",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "9",
+      "name": "На банду",
+      "sum": 15000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-17 13:27:02",
+      "id": "10",
+      "name": "На стволы",
+      "sum": 6000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-12-27 13:27:02",
+      "id": "11",
+      "name": "Прибыль с банка",
+      "sum": 1500000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "12",
+      "name": "Прибыль с магазина",
+      "sum": 300000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "13",
+      "name": "Подарок сизого",
+      "sum": 20000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-15 13:27:02",
+      "id": "14",
+      "name": "На охрану",
+      "sum": 60000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "15",
+      "name": "На бумер",
+      "sum": 300000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "id": "45fj1kl4olwmc6kn6",
+      "type": "income",
+      "name": "Продукты",
+      "sum": 2500,
+      "account_id": "45fj1kkh0lwmbeqin",
+      "user_id": "45fj1khrwlwm77net",
+      "created_at": "2024-05-25T16:39:58.721Z"
+    },
+    {
+      "id": "45fj1kdrglwp2ns1o",
+      "type": "income",
+      "name": "Фриланс",
+      "sum": 2500,
+      "account_id": "45fj1kasclwp2nkyo",
+      "user_id": "45fj1k6jolwm75o93",
+      "created_at": "2024-05-27T14:36:43.835Z"
+    },
+    {
+      "id": "45fj1k7y4lwp2x905",
+      "type": "expense",
+      "name": "ппп",
+      "sum": 300,
+      "account_id": "45fj1kasclwp2nkyo",
+      "user_id": "45fj1k6jolwm75o93",
+      "created_at": "2024-05-27T14:44:05.716Z"
+    },
+    {
+      "id": "45fj1kckklwp591hv",
+      "type": "income",
+      "name": "Продажа телефона",
+      "sum": 35000,
+      "account_id": "45fj1kgeglwp38kf1",
+      "user_id": "45fj1k65wlwp37fo9",
+      "created_at": "2024-05-27T15:49:15.090Z"
+    }
+  ]
+}
