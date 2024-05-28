@@ -7,7 +7,7 @@ const createRequest = (options = {}) => {
   xhr.responseType = "json";
 
   xhr.addEventListener("load", () => {
-    options.callback(null, xhr.response); // {success: true, user: Object}
+    options.callback(null, xhr.response);
   });
 
   xhr.addEventListener("error", () => {
@@ -23,7 +23,7 @@ const createRequest = (options = {}) => {
       } else {
         options.url += "&";
       }
-      options.url += `${key}=${value}`; // "/account?name=demo&email=demo@demo&id=1"
+      options.url += `${key}=${value}`;
     });
     options.data = null;
   }

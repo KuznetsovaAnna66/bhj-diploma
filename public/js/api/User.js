@@ -34,7 +34,7 @@ class User {
    * авторизованном пользователе.
    * */
   static fetch(callback) {
-    const options = {
+    createRequest({
       url: this.URL + "/current",
       method: "GET",
       callback: (err, response) => {
@@ -45,8 +45,7 @@ class User {
         }
         callback(err, response);
       },
-    };
-    createRequest(options);
+    });
   }
 
   /**
@@ -56,7 +55,7 @@ class User {
    * User.setCurrent.
    * */
   static login(data, callback) {
-    const options = {
+    createRequest({
       url: this.URL + "/login",
       data,
       method: "POST",
@@ -66,8 +65,7 @@ class User {
         }
         callback(err, response);
       },
-    };
-    createRequest(options);
+    });
   }
 
   /**
@@ -77,7 +75,7 @@ class User {
    * User.setCurrent.
    * */
   static register(data, callback) {
-    const options = {
+    createRequest({
       url: this.URL + "/register",
       data,
       method: "POST",
@@ -87,8 +85,7 @@ class User {
         }
         callback(err, response);
       },
-    };
-    createRequest(options);
+    });
   }
 
   /**
@@ -96,7 +93,7 @@ class User {
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
   static logout(callback) {
-    const options = {
+    createRequest({
       url: this.URL + "/logout",
       method: "POST",
       callback: (err, response) => {
@@ -105,7 +102,6 @@ class User {
         }
         callback(err, response);
       },
-    };
-    createRequest(options);
+    });
   }
 }

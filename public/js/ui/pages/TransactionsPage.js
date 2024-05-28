@@ -104,18 +104,17 @@ class TransactionsPage {
     if (options) {
       this.lastOptions = options;
 
-      const callback = (accountErr, response) => {
+      Account.get(options.account_id, (err, response) => {
         if (response.success) {
           this.renderTitle(response.data.name);
         }
-        Transaction.list(options, (transactionErr, transactionResponse) => {
-          if (transactionResponse.success) {
-            this.renderTransactions(transactionResponse.data);
-          }
-        });
-      };
+      });
 
-      Account.get(options.account_id, callback);
+      Transaction.list(options, (err, response) => {
+        if (response.success) {
+          this.renderTransactions(response.data);
+        }
+      });
     }
   }
 

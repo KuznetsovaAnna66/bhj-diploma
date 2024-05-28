@@ -20,7 +20,7 @@ class CreateTransactionForm extends AsyncForm {
     const data = User.current();
 
     if (data) {
-      const callback = (err, response) => {
+      Account.list(data, (err, response) => {
         if (response.success) {
           const select = this.element.querySelector("select");
           select.innerHTML = response.data.reduce(
@@ -29,9 +29,7 @@ class CreateTransactionForm extends AsyncForm {
             ""
           );
         }
-      };
-
-      Account.list(data, callback);
+      });
     }
   }
 
@@ -42,14 +40,13 @@ class CreateTransactionForm extends AsyncForm {
    * в котором находится форма
    * */
   onSubmit(data) {
-    const callback = (err, response) => {
+    Transaction.create(data, (err, response) => {
       if (response.success) {
         App.getModal("newIncome").close();
         App.getModal("newExpense").close();
         App.update();
         this.element.reset();
       }
-    };
-    Transaction.create(data, callback);
+    });
   }
 }

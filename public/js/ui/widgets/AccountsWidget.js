@@ -58,13 +58,12 @@ class AccountsWidget {
     const userCurrentData = User.current();
 
     if (userCurrentData) {
-      const callback = (err, response) => {
+      Account.list(userCurrentData, (err, response) => {
         if (response.success) {
           this.clear();
           response.data.forEach((item) => this.renderItem(item));
         }
-      };
-      Account.list(userCurrentData, callback);
+      });
     }
   }
 
